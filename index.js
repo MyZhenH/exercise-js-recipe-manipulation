@@ -38,6 +38,25 @@ console.log(`Value of alt: ${altText}`);
   width: number,
 }*/
 
+const imageContainer = document.querySelector(".image-container img");
+
+const imageHeight = imageContainer.height;
+const imageWidth = imageContainer.width;
+const imageUrl = imageContainer.src;
+
+console.log(imageHeight);
+console.log(imageWidth);
+console.log(imageUrl);
+
+const imageObj = {
+  url: imageUrl,
+  height: imageHeight,
+  width: imageWidth,
+};
+
+console.log(imageObj);
+
+
 //6. How many ingredients has the paste?
 
 const paste = document.querySelector(".ingredients-list-paste");
@@ -58,4 +77,49 @@ console.log(`the forth ingredient is: ${ingredient}`);
     order: number;
     text: instruction;
   }*/
+
+const instructionsObj = [
+{Order: 1,
+  Text: "Smula sönder 10 stycken digistivetex och blanda sen med smöret. Bred ut det i botten av en en rund form med lösbara kanter. Det ska bli som en tjockt täcke på botten av formen."
+},
+
+{Order: 2,
+  Text: "Separera ägggulor och äggvitor. Äggvitorna lägger du i en stor bunke, äggulorna i en liten bunke."
+},
+
+{Order: 3,
+Text: "Vispa äggvitorna hårt med en elvisp. De är tillräckligt vispade när du kan vända upp och ner på bunken utan att det rör sig."
+},
+
+{Order: 4,
+  Text: "Häll upp grädden i en mellanstor bunke. Vispa de relativ hårt. En aning hårdare en vanligt."
+},
+
+{Order: 5,
+  Text: "Blanda i philadelphiaosten och vaniljsockret med äggulorna och vispa ihop."
+},
+
+{Order: 6,
+  Text: "Häll nu över innehållet i bunken med äggulor över grädden. Vispa ihop på lägsta hastigheten."
+},
+
+{Order: 7,
+  Text: "Häll sedan över det innehållet till bunken med äggvitorna. Blande ihop med en gaffel tills det blir en slät fluffig smet."
+},
+
+{Order: 8,
+  Text: "Häll smeten i formen, smula över de resterande digistivetexen om du vill."
+},
+
+{Order: 9,
+  Text: "Ställ in i frysen över natten."
+},
+
+{Order: 10,
+  Text: "Servera och toppa med det du känner för."
+},
+
+];
+
+console.log(instructionsObj);
 
